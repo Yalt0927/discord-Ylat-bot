@@ -41,7 +41,7 @@ client.on('message', (message) => {
     let embed = new Discord.RichEmbed()
       .setTitle('유튜브')
       .setURL('https://www.youtube.com/channel/UCTS7CCpsO_bbC7Pcs9aYzpw')
-      .setAuthor('나긋해', img, 'https://www.youtube.com/channel/UCTS7CCpsO_bbC7Pcs9aYzpw')
+      .setAuthor('재윤TV', img, 'https://www.youtube.com/channel/UCTS7CCpsO_bbC7Pcs9aYzpw')
       .setThumbnail(img)
       .addBlankField()
       .addField('Inline field title', 'Some value here')
