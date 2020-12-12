@@ -44,6 +44,9 @@ client.on('message', (message) => {
       .setAuthor('나긋해', img, 'https://www.youtube.com/channel/UCTS7CCpsO_bbC7Pcs9aYzpw')
       .setThumbnail(img)
       .addBlankField()
+      .addField('Inline field title', 'Some value here')
+      .addField('Inline field title', 'Some value here', true)
+      .addField('Inline field title', 'Some value here1\nSome value here2\nSome value here3\n')
       .addBlankField()
       .setTimestamp()
       .setFooter('얄트가 만듬', img)
@@ -54,7 +57,7 @@ client.on('message', (message) => {
     let commandList = [
       {name: '!도움말', desc: 'help'},
       {name: 'ping', desc: '현재 핑 상태'},
-      {name: 'embed', desc: 'embed 예제1'},
+      {name: '!유튜브', desc: '재윤TV 유튜브 링크'},
       {name: '!전체공지', desc: 'dm으로 전체 공지 보내기'},
       {name: '!전체공지2', desc: 'dm으로 전체 embed 형식으로 공지 보내기'},
       {name: '!청소', desc: '텍스트 지움'},
