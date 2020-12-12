@@ -36,24 +36,19 @@ client.on('message', (message) => {
     return message.reply('pong');
   }
 
-  if(message.content == 'embed') {
-    let img = 'https://cdn.discordapp.com/icons/419671192857739264/6dccc22df4cb0051b50548627f36c09b.webp?size=256';
+  if(message.content == '!유튜브') {
+    let img = 'https://cdn.discordapp.com/icons/4196https://cdn.discordapp.com/avatars/724491903554289705/2f8f9005111ce49d91c0f7c26e44790d.png?size=12871192857739264/6dccc22df4cb0051b50548627f36c09b.webp?size=256';
     let embed = new Discord.RichEmbed()
-      .setTitle('타이틀')
-      .setURL('http://www.naver.com')
-      .setAuthor('나긋해', img, 'http://www.naver.com')
+      .setTitle('재윤 유튜브')
+      .setURL('https://www.youtube.com/channel/UCTS7CCpsO_bbC7Pcs9aYzpw')
+      .setAuthor('나긋해', img, 'https://www.youtube.com/channel/UCTS7CCpsO_bbC7Pcs9aYzpw')
       .setThumbnail(img)
       .addBlankField()
-      .addField('Inline field title', 'Some value here')
-      .addField('Inline field title', 'Some value here', true)
-      .addField('Inline field title', 'Some value here', true)
-      .addField('Inline field title', 'Some value here', true)
-      .addField('Inline field title', 'Some value here1\nSome value here2\nSome value here3\n')
       .addBlankField()
       .setTimestamp()
-      .setFooter('나긋해가 만듬', img)
+      .setFooter('얄트가 만듬', img)
 
-    message.channel.send(embed)
+    message.channel.send(!유튜브)
   } else if(message.content == '!도움말') {
     let helpImg = 'https://images-ext-1.discordapp.net/external/RyofVqSAVAi0H9-1yK6M8NGy2grU5TWZkLadG-rwqk0/https/i.imgur.com/EZRAPxR.png';
     let commandList = [
