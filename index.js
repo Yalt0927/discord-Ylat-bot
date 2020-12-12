@@ -36,7 +36,7 @@ client.on('message', (message) => {
     return message.reply('pong');
   }
 
-  if(message.content == '유튜브') {
+  if(message.content == '!유튜브') {
     let img = 'https://cdn.discordapp.com/avatars/724491903554289705/2f8f9005111ce49d91c0f7c26e44790d.png?size=128';
     let embed = new Discord.RichEmbed()
       .setTitle('유튜브')
